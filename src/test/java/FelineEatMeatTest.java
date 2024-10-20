@@ -7,7 +7,7 @@ import java.util.List;
 public class FelineEatMeatTest {
 
     @Test
-    public void IFelineEatMeatTest() throws Exception {
+    public void eatMeatTest() throws Exception {
         Feline feline = new Feline();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
         Assert.assertEquals(expected, feline.eatMeat());

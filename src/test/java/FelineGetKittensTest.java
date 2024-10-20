@@ -26,7 +26,7 @@ public class FelineGetKittensTest {
     }
 
     @Test
-    public void ShouldBeKittens() {
+    public void shouldBeKittens() {
         Feline feline = new Feline();
         int actual = feline.getKittens(kittensCount);
         Assert.assertEquals(expected, actual);

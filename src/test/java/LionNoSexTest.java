@@ -3,20 +3,15 @@ import com.example.Lion;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mock;
+import org.mockito.internal.matchers.Null;
 
 public class LionNoSexTest {
 
     @Mock
-    Feline feline = new Feline();
+    Feline feline;
 
     @Test
     public void noSexTest() throws Exception {
-        String expectedMessage = "Используйте допустимые значения пола животного - самей или самка";
-        try {
-            String sex = "аоравлорпав";
-            Lion lion = new Lion(sex, feline);
-        } catch (Exception exception) {
-            Assert.assertEquals(exception.getMessage(), expectedMessage);
-        }
+        Assert.assertThrows(Exception.class, () -> { new Lion("dfsfsdf", feline);});
     }
 }

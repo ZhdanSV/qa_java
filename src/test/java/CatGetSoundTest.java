@@ -10,8 +10,7 @@ public class CatGetSoundTest {
     Feline feline;
 
     @Test
-    public void SoundTest() {
-//        Feline feline = new Feline();
+    public void soundTest() {
         Cat cat = new Cat(feline);
         String expected = "Мяу";
         Assert.assertEquals(expected, cat.getSound());

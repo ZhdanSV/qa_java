@@ -6,7 +6,7 @@ import org.junit.Test;
 public class FelineGetFamilyTest {
 
     @Test
-    public void IFelineGetFamilyTest() {
+    public void felineGetFamilyTest() {
         Feline feline = new Feline();
         String expected = "Кошачьи";
         Assert.assertEquals(expected, feline.getFamily());
